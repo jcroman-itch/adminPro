@@ -1,4 +1,7 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+
 
 
 //RUTAS
@@ -21,8 +24,10 @@ import { RegistrerComponent } from './login/registrer/registrer.component';
     RegistrerComponent,       
   ],
   imports: [    
+    BrowserModule,
     APP_ROUTES,
-    PageModule
+    PageModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
