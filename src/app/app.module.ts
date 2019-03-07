@@ -11,11 +11,14 @@ import { APP_ROUTES } from './app.routes';
 //Modulos
 import { PageModule } from './pages/pages.module';
 
+//Servicios
 
 //Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrerComponent } from './login/registrer/registrer.component';
+import { ServiceModule } from './services/service.module';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { RegistrerComponent } from './login/registrer/registrer.component';
     BrowserModule,
     APP_ROUTES,
     PageModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
